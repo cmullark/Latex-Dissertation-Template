@@ -1,0 +1,32 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "compile_and_stage",
+            "type": "shell",
+            "command": "lualatex master; bibtex master; lualatex master; lualatex master; git commit --all -m 'auto';git push --all",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "start_up",
+            "type": "shell",
+            "command": "./master.pdf",
+            "runOptions": {
+                "runOn": "folderOpen"
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "clear_all_aux",
+            "type": "shell",
+            "command": "del *.aux; del *.log; del *.bbl; del *.log; del *.toc; del *.lof; del *.blg",
+            "problemMatcher": []
+        },
+    ]
+}
