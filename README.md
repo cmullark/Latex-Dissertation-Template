@@ -6,9 +6,9 @@
 The PDF was generated with LuaTeX using the latest (July 2020) MikTeX (https://miktex.org/) distribution. 
 
 
- ### Note About subfiles
+### Note About subfiles
 Compiling a single chapter is useful only for checking formatting and text content. Any references to labels that occur outside that chapter (including bibliography) will not work properly. The references and labels will only be correct when compiling the whole dissertation. 
 
 
 ### Note About .gitignore
-PDF files are ignored since 
+PDF files are ignored since this will greatly inflate the size of the repo.
