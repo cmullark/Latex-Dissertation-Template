@@ -1,4 +1,4 @@
-# Rochester-Dissertation-Template
+# Latex-Dissertation-Template
  LaTeX Template for a University of Rochester Dissertation. It is built according to the guidelines set by the University, see: http://www.rochester.edu/Theses/. It includes an example bibliography and properly formatted page numbers for the frontmatter and table of contents. It also uses the subfiles package (https://www.ctan.org/pkg/subfiles) which allows you to either compile the whole document by compiling "master.tex" or compiling a chapter individually. Though it is formatted specifically for the University of Rochester, it will likely be close to many other Universities' guidelines as well. 
 
 
