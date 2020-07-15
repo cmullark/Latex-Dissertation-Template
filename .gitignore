@@ -274,3 +274,5 @@ TSWLatexianTemp*
 
 # OPTIONAL IGNORE PDF because it can greatly inflate repository size
 *.pdf
+.vscode/settings.json
+.vscode/tasks.json
