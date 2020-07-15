@@ -271,3 +271,6 @@ TSWLatexianTemp*
 
 # Makeindex log files
 *.lpz
+
+# OPTIONAL IGNORE PDF because it can greatly inflate repository size
+*.pdf

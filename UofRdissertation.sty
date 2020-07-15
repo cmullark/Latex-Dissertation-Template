@@ -1,0 +1,48 @@
+\ProvidesPackage{UofRdissertation}
+% these were all the packages I needed to write my own dissertation in Physics. You might need more, I recommend including them directly in the following list: 
+\usepackage[table,xcdraw]{xcolor}
+\usepackage{eso-pic, graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{bm}
+\usepackage{setspace}
+\usepackage{float}
+\usepackage{subfiles}
+\usepackage{lipsum}
+\usepackage[]{algorithm2e}
+\usepackage{nicefrac}
+\usepackage{wrapfig}
+
+
+% University of Rochester requires main body to have the equivalent text size of 12 point Times New Roman or 10 point Arial.
+\usepackage{fontspec}
+%\setmainfont{Arial}
+\setmainfont[SizeFeatures={Size=12}]{Times New Roman}
+\newfontfamily\titlefont[SizeFeatures={Size=32}]{Times New Roman}
+% Fonts in figures and tables may be smaller than 11 point, but all text must remain legible if reduced to 50% size.
+
+% University of Rochester requires the page numbers to appear in the top-margin, preferably in the top-right at least 0.75 inches from each edge
+\usepackage{fancyhdr}
+\fancyhf{}  % make sure header and footer format is empty
+\renewcommand{\headrulewidth}{0pt} % get rid of horizontal line that appears by default
+\fancypagestyle{uofrthesis}{
+\rhead{\thepage}
+}
+\let\ps@plain\ps@uofrthesis  % override "plain" page style which is used by default in the table of contents and elsewhere with our custom style
+
+
+% Bibliography Style
+\bibliographystyle{unsrt}	
+
+% University of Rochester requires at least 1.25 inch margins on all sides
+\usepackage[letterpaper,top=1.25in,
+bottom=1.25in, 
+outer=1.25in,
+inner=1.25in]{geometry}
+
+%Rename "Contents" to "Table of Contents"
+\renewcommand{\contentsname}{Table of Contents}
+
+
+%So we can build chapters independently if desired
+\usepackage{subfiles} 
